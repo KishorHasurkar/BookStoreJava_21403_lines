@@ -1,0 +1,12 @@
+version: 0.2 
+env:
+ variables:
+ AST_CLI_EXE: "/app/bin/cx"
+ phases: 
+ pre_build: 
+ commands:
+ - |
+ ${AST_CLI_EXE} scan create \
+ --project-name ${CX_PROJECT_NAME} \
+ --file-source . \
+ --branch ${CODEBUILD_SOURCE_VERSION}
