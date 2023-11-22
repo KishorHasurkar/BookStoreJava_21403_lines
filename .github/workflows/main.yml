@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkmarx AST CLI Action
-        uses: checkmarx/ast-github-action@2.0.9 #Github Action version
+        uses: checkmarx/ast-github-action@main #Github Action version
         with:
           base_uri: https://deu.ast.checkmarx.net/
           cx_tenant: cx_emea_ses_canary_kishor_hasurkar_canar
